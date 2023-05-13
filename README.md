@@ -47,6 +47,26 @@ First letter of function name must be  **Capitalized**
 Capitalized name - treated as jsx 
 Non-capitalized - treated as normal HTML component
 
+**Props must never modify its own prompts**
+**Propa enable only Parent to Child oneway communication**
+
+ createElement function receives three arguments:
+ 
+The wrapping element to render. 
+
+A null value (which is there to show an absence of an expected JavaScript object value). 
+
+The inner content that will go inside the wrapping element. 
+
+Easy understanding...
+```
+React.createElement(
+  type,
+  [props],
+  [...children]
+)
+```
+
 ### Functional Components
 
 
