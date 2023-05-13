@@ -74,7 +74,34 @@ React.createElement(
 
 ## Folder Structure
 
+## Using Properties (props)
+Sending props
+```
+//app.js
+import Heading from "./Heading";
 
+function App() {
+  return (
+    <div className="App">
+      <Heading firstName="Bob" />
+      <Heading firstName="Yasir" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Receiving props
+```
+function Heading(props) {
+    return (
+        <h1>Hello, {props.firstName}</h1>
+    )
+}
+
+export default Heading;
+```
 
 --Manifest.JSON contains metadata for devices
 --Index.css contains styles for entire app
