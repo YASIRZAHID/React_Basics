@@ -52,3 +52,13 @@ Non-capitalized - treated as normal HTML component
 
 ### Class Components
 
+## Folder Structure
+
+
+
+--Manifest.JSON contains metadata for devices
+--Index.css contains styles for entire app
+--App.css contains styles for app.js
+-- app.test.js , setuptests.js , reportwebvitals.js are for app testing
+-- index.js is main file here
+--use filname sequence to import e.g ./
