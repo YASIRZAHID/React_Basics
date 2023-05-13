@@ -103,6 +103,23 @@ function Heading(props) {
 export default Heading;
 ```
 
+```
+function Bag(props) {
+    const bag = {
+        padding: "20px",
+        border: "1px solid gray",
+        background: "#fff",
+        margin: "20px 0"
+    }
+    return (
+        <div style={bag}>
+            {props.children}
+        </div>
+    )
+}
+export default Bag
+```
+
 --Manifest.JSON contains metadata for devices
 --Index.css contains styles for entire app
 --App.css contains styles for app.js
